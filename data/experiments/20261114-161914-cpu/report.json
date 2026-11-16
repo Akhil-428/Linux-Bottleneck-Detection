@@ -1,0 +1,3852 @@
+{
+ "run_id": "20261114-161914-cpu",
+ "kind": "cpu",
+ "status": "completed",
+ "plan": {
+  "kind": "cpu",
+  "duration": 30.0,
+  "cores": 1,
+  "warnings": [],
+  "notes": [
+   "stress-ng not found: using the built-in Python workload generator.",
+   "2 CPU-bound workers on 1 core(s): demand exceeds CPU capacity."
+  ],
+  "backend": "builtin",
+  "workers": 2
+ },
+ "params": {
+  "duration": 30.0,
+  "baseline_s": 20.0,
+  "recovery_s": 30.0,
+  "interval": 1.0,
+  "window": 5,
+  "required": 3
+ },
+ "marks": {
+  "baseline_start": 0.0,
+  "stress_start": 20.01,
+  "stress_end": 50.04,
+  "end": 57.1
+ },
+ "environment": {
+  "python": "3.12.3",
+  "kernel": "6.18.44-fc-v470",
+  "cores": 1,
+  "mem_total_mb": 3992,
+  "psi_cpu": true,
+  "psi_memory": true,
+  "psi_io": true,
+  "schedstat": false,
+  "uid": 0
+ },
+ "workload_pids": [
+  131,
+  132
+ ],
+ "leftover_pids": [],
+ "timeline": [
+  {
+   "t": 1.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 21.995624784287163,
+    "psi_cpu_some_pct": 0.10497911828864327,
+    "psi_cpu": 0.33,
+    "mem_percent": 5.96362142011487,
+    "mem_available_mb": 3754.21875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.17
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 2.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.9801980198019802,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 48.00354419767512,
+    "psi_cpu_some_pct": 0.003800280582315947,
+    "psi_cpu": 0.27,
+    "mem_percent": 5.963425731142921,
+    "mem_available_mb": 3754.2265625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.14
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 3.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.9801980198019802,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 159.99914768454082,
+    "psi_cpu_some_pct": 0.12869931441875251,
+    "psi_cpu": 0.27,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062291915171097,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.14
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 4.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 58.99452342040226,
+    "psi_cpu_some_pct": 0.019598180661692954,
+    "psi_cpu": 0.22,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003905887408660107,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.11
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 5.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0101010101010102,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 29.00149375093688,
+    "psi_cpu_some_pct": 0.03370173584160596,
+    "psi_cpu": 0.22,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000515086529959,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039064512056757655,
+    "psi_io_some_pct": 0.01520078293152554,
+    "psi_io_full_pct": 0.014100726272007244,
+    "psi_io": 0.11
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 6.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.9900990099009901,
+    "iowait_percent": 0.0,
+    "load1": 0.07,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 44.001323119786576,
+    "psi_cpu_some_pct": 0.01590047812737742,
+    "psi_cpu": 0.18,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906367464469688,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.09
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 7.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 41.00153276029883,
+    "psi_cpu_some_pct": 0.0023000859841143246,
+    "psi_cpu": 0.18,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0010000373843975325,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039063960328028615,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.09
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 8.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 39.99625811007642,
+    "psi_cpu_some_pct": 0.011898886787747734,
+    "psi_cpu": 0.15,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.00390588458106215,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.07
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 9.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 40.999386936166964,
+    "psi_cpu_some_pct": 0.09549857200985232,
+    "psi_cpu": 0.15,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0009999850472235845,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039061915907171265,
+    "psi_io_some_pct": 0.047699286752564976,
+    "psi_io_full_pct": 0.046199309181729604,
+    "psi_io": 0.07
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 10.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 39.001379868819754,
+    "psi_cpu_some_pct": 0.018700661629408446,
+    "psi_cpu": 0.12,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0010000353812517886,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906388208014799,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.06
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 11.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 32.000338403578766,
+    "psi_cpu_some_pct": 0.028500301390687335,
+    "psi_cpu": 0.12,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906291309030611,
+    "psi_io_some_pct": 0.023700250630150525,
+    "psi_io_full_pct": 0.02270024005503869,
+    "psi_io": 0.06
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 12.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 46.00295237747779,
+    "psi_cpu_some_pct": 0.0014000898549667152,
+    "psi_cpu": 0.1,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000641821190823,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906500711402665,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.05
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 13.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.9900990099009901,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 39.99906054206477,
+    "psi_cpu_some_pct": 0.025699396398276612,
+    "psi_cpu": 0.1,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906158256061012,
+    "psi_io_some_pct": 0.023599445719818212,
+    "psi_io_full_pct": 0.02259946920626659,
+    "psi_io": 0.05
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 14.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 35.00047355640736,
+    "psi_cpu_some_pct": 0.009700131242775752,
+    "psi_cpu": 0.08,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.40000541207322693,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0020000270603661345,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039063028522776065,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.04
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 15.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 33.99987488046023,
+    "psi_cpu_some_pct": 0.02749989880037225,
+    "psi_cpu": 0.08,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0009999963200135362,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062356250528763,
+    "psi_io_some_pct": 0.021599920512292384,
+    "psi_io_full_pct": 0.0206999238242802,
+    "psi_io": 0.04
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 16.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.06,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 28.998449365917224,
+    "psi_cpu_some_pct": 0.25768622074471964,
+    "psi_cpu": 0.06,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039060411322625575,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.03
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 17.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.9607843137254901,
+    "iowait_percent": 0.0,
+    "load1": 0.05,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 42.000236797335255,
+    "psi_cpu_some_pct": 0.0034000191693080925,
+    "psi_cpu": 0.06,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0010000056380317919,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906272023561687,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.03
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 18.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.05,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 38.999682542583884,
+    "psi_cpu_some_pct": 0.4036967139087465,
+    "psi_cpu": 0.05,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906218203383803,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.02
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 19.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.05,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 41.999911842185064,
+    "psi_cpu_some_pct": 0.025699946055813237,
+    "psi_cpu": 0.05,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.24,
+    "disk_queue": 0.005999987406026437,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.15624967203193846,
+    "psi_io_some_pct": 0.044399906804595636,
+    "psi_io_full_pct": 0.03919991771937272,
+    "psi_io": 0.02
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 20.01,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.05,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 36.00168214259645,
+    "psi_cpu_some_pct": 0.006200289702336056,
+    "psi_cpu": 0.04,
+    "mem_percent": 5.965773998806298,
+    "mem_available_mb": 3754.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.4000186904732939,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000467261832347,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906432524153261,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.02
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 21.04,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.05,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 292.5422223125694,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 0.04,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.3953273274494181,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003860618432123223,
+    "psi_io_some_pct": 0.017888561567086167,
+    "psi_io_full_pct": 0.016307252257288494,
+    "psi_io": 0.02
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": true
+  },
+  {
+   "t": 22.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.21,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 281.0093255754774,
+    "psi_cpu_some_pct": 99.04418688038542,
+    "psi_cpu": 12.89,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.4000132748405372,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0030000995613040293,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906379637114622,
+    "psi_io_some_pct": 0.2194072812500347,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": true
+  },
+  {
+   "t": 23.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.21,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 296.9992750247677,
+    "psi_cpu_some_pct": 99.75345650181202,
+    "psi_cpu": 12.89,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062404648669996,
+    "psi_io_some_pct": 0.017899956306206537,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "WARNING",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 2.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 26% of a core avg, present in 3/5 samples, ~43% of measured load; 'python3' (PID 132) 26% of a core avg, present in 3/5 samples, ~42% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.7 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.21 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 297/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 24.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.21,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 287.00070688274144,
+    "psi_cpu_some_pct": 99.7899457826366,
+    "psi_cpu": 28.49,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.5,
+    "disk_queue": 0.0010000024630060676,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.011718778863352356,
+    "psi_io_some_pct": 0.016700041132201332,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "WARNING",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 3.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 35% of a core avg, present in 4/5 samples, ~44% of measured load; 'python3' (PID 132) 35% of a core avg, present in 4/5 samples, ~44% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.8 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.21 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 287/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 25.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.21,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 271.36698548935397,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 28.49,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0038971591436315774,
+    "psi_io_some_pct": 0.022148334845086978,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 4.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 45% of a core avg, present in 5/5 samples, ~45% of measured load; 'python3' (PID 132) 45% of a core avg, present in 5/5 samples, ~45% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.21 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 271/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 26.04,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.21,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 270.6300937037739,
+    "psi_cpu_some_pct": 99.97266104816683,
+    "psi_cpu": 41.26,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010023336803843478,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003915365939001359,
+    "psi_io_some_pct": 0.01884387319122574,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 5.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.21 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 271/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 27.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.35,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 290.32394440496296,
+    "psi_cpu_some_pct": 99.96511872540906,
+    "psi_cpu": 41.26,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003897174941003046,
+    "psi_io_some_pct": 0.021050980161322053,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.01
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 6.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.35 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 290/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 28.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.35,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 288.67358082993275,
+    "psi_cpu_some_pct": 99.96244887952962,
+    "psi_cpu": 51.72,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003915386024711544,
+    "psi_io_some_pct": 0.016939526097312026,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 7.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.35 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 289/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 29.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.35,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 275.0005214009887,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 51.72,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000018960035955,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906257406264045,
+    "psi_io_some_pct": 0.01740003299046256,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 8.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.35 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 275/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 30.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.35,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 283.9985996029035,
+    "psi_cpu_some_pct": 99.98490697442305,
+    "psi_cpu": 60.29,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062307383762036,
+    "psi_io_some_pct": 0.02099989644951047,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 9.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.35 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 284/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 31.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.35,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 276.99786517745457,
+    "psi_cpu_some_pct": 99.96322958339015,
+    "psi_cpu": 60.29,
+    "mem_percent": 6.165963817109087,
+    "mem_available_mb": 3746.140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0009999922930594028,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906219894763292,
+    "psi_io_some_pct": 0.015399881313114802,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 10.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.35 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 277/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 32.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.48,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 294.00082820033157,
+    "psi_cpu_some_pct": 99.97978164304439,
+    "psi_cpu": 67.3,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906261003937228,
+    "psi_io_some_pct": 0.01680004732573323,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 11.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.48 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 294/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 33.04,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.48,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 341.99482972216657,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 67.3,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0009999848822285573,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906190946205302,
+    "psi_io_some_pct": 0.013299798933639811,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 12.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.48 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 342/s per core; baseline median 40.0, z=0.6 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 34.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.48,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 274.0062506305887,
+    "psi_cpu_some_pct": 98.82985450664076,
+    "psi_cpu": 73.04,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039063391114078,
+    "psi_io_some_pct": 0.02120048362543241,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 13.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 98.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 98.8% (threshold 10%); baseline median 0.0, z=98.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.48 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 274/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 35.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.48,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 278.99973829824563,
+    "psi_cpu_some_pct": 99.9637062340436,
+    "psi_cpu": 73.04,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906246335940939,
+    "psi_io_some_pct": 0.01989998133381752,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 14.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.48 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 279/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 36.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.48,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 282.00087110069177,
+    "psi_cpu_some_pct": 99.96510879222139,
+    "psi_cpu": 77.74,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000030890095454,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906262066443536,
+    "psi_io_some_pct": 0.015800048806350813,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 15.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.48 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 282/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 37.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.6,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 281.00023323019093,
+    "psi_cpu_some_pct": 99.97368297815592,
+    "psi_cpu": 77.74,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906253242190154,
+    "psi_io_some_pct": 0.014200011786009648,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 16.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.60 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 281/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 38.04,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.6,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 291.31316308993064,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 81.59,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0009976478188011323,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0038970617921919234,
+    "psi_io_some_pct": 0.02095060419482378,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 17.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.60 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 291/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 39.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.6,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 284.66962009192514,
+    "psi_cpu_some_pct": 99.75444949867736,
+    "psi_cpu": 81.59,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003915460223535502,
+    "psi_io_some_pct": 0.016639139765936468,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 18.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.7 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.60 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 285/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 40.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.6,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 276.9995723126564,
+    "psi_cpu_some_pct": 99.97354564084412,
+    "psi_cpu": 84.75,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062439687592575,
+    "psi_io_some_pct": 0.013299979464831519,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 19.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.60 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 277/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 41.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.6,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 273.00029238331695,
+    "psi_cpu_some_pct": 99.97040706830737,
+    "psi_cpu": 84.75,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.001000001071001161,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062541835982855,
+    "psi_io_some_pct": 0.029600031701634368,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 20.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.60 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 273/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 42.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.72,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 285.0002157451579,
+    "psi_cpu_some_pct": 99.75607551534725,
+    "psi_cpu": 87.33,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.001000000757000554,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906252957033414,
+    "psi_io_some_pct": 0.019000014383010525,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 21.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.7 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.72 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 285/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 43.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.72,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 299.0004266736091,
+    "psi_cpu_some_pct": 99.97544266495677,
+    "psi_cpu": 87.33,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906255574226708,
+    "psi_io_some_pct": 0.015700022403931983,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 22.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.72 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 299/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 44.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.72,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 275.0003195503763,
+    "psi_cpu_some_pct": 99.96701616167456,
+    "psi_cpu": 89.44,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906254539067845,
+    "psi_io_some_pct": 0.017200019986423534,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 23.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.72 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 275/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 45.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.72,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 287.00020319614026,
+    "psi_cpu_some_pct": 99.97127077965845,
+    "psi_cpu": 89.44,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000007080004888,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906252765626909,
+    "psi_io_some_pct": 0.022100015646810803,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 24.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load; 'python3' (PID 132) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=99.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.72 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 287/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 46.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.72,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 275.00019442513695,
+    "psi_cpu_some_pct": 99.99157069404029,
+    "psi_cpu": 91.17,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906252761720695,
+    "psi_io_some_pct": 0.016200011453408065,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 25.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.72 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 275/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 47.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.82,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 283.0007748561233,
+    "psi_cpu_some_pct": 99.76547315786614,
+    "psi_cpu": 91.17,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.001000002738007503,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906260695341808,
+    "psi_io_some_pct": 0.022600061878969565,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 26.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 132), 'python3' (PID 131)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      132,
+      131
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.7 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.82 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 283/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 48.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.82,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 312.2704216916841,
+    "psi_cpu_some_pct": 100.0,
+    "psi_cpu": 92.59,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0038971448394030063,
+    "psi_io_some_pct": 0.014166900920197808,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 27.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.82 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 312/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 49.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.82,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 270.63088416255545,
+    "psi_cpu_some_pct": 99.97445655411522,
+    "psi_cpu": 92.59,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003915377375036971,
+    "psi_io_some_pct": 0.015736684745748596,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 28.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 132), 'python3' (PID 131)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 131) 49% of a core avg, present in 5/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      132,
+      131
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.82 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 271/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 50.03,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 100.0,
+    "iowait_percent": 0.0,
+    "load1": 0.82,
+    "runq_wait_per_core": null,
+    "procs_running": 3,
+    "ctx_switches_s": 280.0009332431091,
+    "psi_cpu_some_pct": 99.97503321678522,
+    "psi_cpu": 93.75,
+    "mem_percent": 6.168996996174281,
+    "mem_available_mb": 3746.01953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.1111111111111111,
+    "disk_queue": 0.0020000066660222082,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.05078141925447013,
+    "psi_io_some_pct": 0.017500058327694322,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "CRITICAL",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 29.0,
+     "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 100.0%; 2.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 50% of a core avg, present in 5/5 samples, ~50% of measured load; 'python3' (PID 132) 50% of a core avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 100.0% (threshold 10%); baseline median 0.0, z=100.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.82 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 280/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 51.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 2.8301886792452833,
+    "iowait_percent": 0.0,
+    "load1": 0.82,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 82.99070138985188,
+    "psi_cpu_some_pct": 2.425028290130214,
+    "psi_cpu": 93.75,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0009998879685524321,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039058123771579384,
+    "psi_io_some_pct": 0.02369734485469264,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "WARNING",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 30.1,
+     "headline": "CPU contention confirmed: CPU utilisation 3%; CPU PSI some 2.4%; 0.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 40% of a core avg, present in 4/5 samples, ~49% of measured load; 'python3' (PID 132) 40% of a core avg, present in 4/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 3% (threshold 85%); baseline median 1.0, z=0.4 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 2.4% (threshold 10%); baseline median 0.0, z=2.4 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "0.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=0.0 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.82 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 83/s per core; baseline median 40.0, z=0.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": false
+  },
+  {
+   "t": 52.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.75,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 75.99734404482196,
+    "psi_cpu_some_pct": 0.029198979554063174,
+    "psi_cpu": 84.01,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906113489145866,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "CONFIRMED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "CPU",
+     "device": null,
+     "state": "CONFIRMED",
+     "severity": "WARNING",
+     "confidence": "HIGH",
+     "method": "static+baseline",
+     "duration_s": 31.1,
+     "headline": "CPU contention confirmed: CPU utilisation 1%; CPU PSI some 0.0%; 0.00 runnable tasks per core (procs_running)",
+     "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+     "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python3' (PID 131) 30% of a core avg, present in 3/5 samples, ~49% of measured load; 'python3' (PID 132) 30% of a core avg, present in 3/5 samples, ~49% of measured load.",
+     "responsible_pids": [
+      131,
+      132
+     ],
+     "evidence": [
+      {
+       "name": "CPU utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "CPU utilisation 1% (threshold 85%); baseline median 1.0, z=0.0 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "CPU PSI (some)",
+       "cls": "stall",
+       "status": "present",
+       "detail": "CPU PSI some 0.0% (threshold 10%); baseline median 0.0, z=0.0 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "Run queue",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "0.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=0.0 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "Load average",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "load1/core 0.75 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "Context switches",
+       "cls": "supporting",
+       "status": "absent",
+       "detail": "context switches 76/s per core; baseline median 40.0, z=0.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [],
+     "missing": []
+    }
+   ],
+   "workload_running": false
+  },
+  {
+   "t": 53.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.75,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 111.99628732307443,
+    "psi_cpu_some_pct": 0.11309625085928321,
+    "psi_cpu": 84.01,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.3999867404395515,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0009999668510988788,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039061205121049955,
+    "psi_io_some_pct": 0.025099167962581857,
+    "psi_io_full_pct": 0.02409920111148298,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "RECOVERED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 54.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.75,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 37.00068377263591,
+    "psi_cpu_some_pct": 0.019500360366659465,
+    "psi_cpu": 68.79,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.001000018480341511,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.003906322188834028,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "RECOVERED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 55.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 1.0,
+    "iowait_percent": 0.0,
+    "load1": 0.75,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 32.000370852297685,
+    "psi_cpu_some_pct": 0.033500388235999136,
+    "psi_cpu": 68.79,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.00390629527005587,
+    "psi_io_some_pct": 0.030100348832942506,
+    "psi_io_full_pct": 0.029200338402721633,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "RECOVERED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 56.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 0.0,
+    "iowait_percent": 0.0,
+    "load1": 0.75,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 36.00101310450982,
+    "psi_cpu_some_pct": 0.022700638818677028,
+    "psi_cpu": 56.33,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 0.0,
+    "disk_queue": 0.0010000281417919395,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039063599288747634,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "RECOVERED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 57.1,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 2.0,
+    "iowait_percent": 0.0,
+    "load1": 0.69,
+    "runq_wait_per_core": null,
+    "procs_running": 1,
+    "ctx_switches_s": 43.999957936039856,
+    "psi_cpu_some_pct": 0.011399989101610327,
+    "psi_cpu": 56.33,
+    "mem_percent": 6.082404626087297,
+    "mem_available_mb": 3749.4765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.0,
+    "disk_await_ms": 1.0,
+    "disk_queue": 0.0,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062462656285386,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.0
+   },
+   "status": {
+    "CPU": "RECOVERED",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  }
+ ],
+ "evaluation": {
+  "kind": "cpu",
+  "target": "CPU",
+  "status": "completed",
+  "samples": {
+   "baseline": 20,
+   "stress": 30,
+   "recovery": 7
+  },
+  "false_positives_baseline": {
+   "samples": 20,
+   "positive_samples": 0,
+   "rate": 0.0
+  },
+  "phase_means": {
+   "baseline": {
+    "cpu_percent": 0.796,
+    "psi_cpu_some_pct": 0.061,
+    "runq_wait_per_core": null,
+    "procs_running": 1.0,
+    "mem_percent": 5.966,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 0.04,
+    "disk_await_ms": 0.262,
+    "psi_io_some_pct": 0.009,
+    "disk_write_mbs": 0.011,
+    "disk_read_mbs": 0.0
+   },
+   "stress": {
+    "cpu_percent": 100.0,
+    "psi_cpu_some_pct": 99.874,
+    "runq_wait_per_core": null,
+    "procs_running": 3.0,
+    "mem_percent": 6.168,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 0.027,
+    "disk_await_ms": 0.22,
+    "psi_io_some_pct": 0.025,
+    "disk_write_mbs": 0.006,
+    "disk_read_mbs": 0.0
+   },
+   "recovery": {
+    "cpu_percent": 1.119,
+    "psi_cpu_some_pct": 0.379,
+    "runq_wait_per_core": null,
+    "procs_running": 1.0,
+    "mem_percent": 6.082,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 0.057,
+    "disk_await_ms": 0.429,
+    "psi_io_some_pct": 0.011,
+    "disk_write_mbs": 0.004,
+    "disk_read_mbs": 0.0
+   }
+  },
+  "resources_confirmed_during_stress": [
+   "CPU"
+  ],
+  "resources_positive_during_stress": [
+   "CPU"
+  ],
+  "detection": {
+   "confirmed": true,
+   "potential_or_confirmed": true,
+   "latency_confirmed_s": 3.02,
+   "latency_potential_s": 3.02,
+   "confirmed_fraction_of_stress_samples": 0.933,
+   "first_diagnosis": {
+    "resource": "CPU",
+    "device": null,
+    "state": "CONFIRMED",
+    "severity": "WARNING",
+    "confidence": "HIGH",
+    "method": "static+baseline",
+    "duration_s": 2.0,
+    "headline": "CPU contention confirmed: CPU utilisation 100%; CPU PSI some 99.8%; 2.00 runnable tasks per core (procs_running)",
+    "likely_cause": "Sustained CPU demand exceeding available processing capacity: tasks are delayed waiting for a CPU.",
+    "recommendation": "Several processes contribute ('python3' (PID 131), 'python3' (PID 132)); reduce their concurrency or priority.",
+    "responsible_verdict": "multiple",
+    "responsible_text": "Multiple contributors: 'python3' (PID 131) 26% of a core avg, present in 3/5 samples, ~43% of measured load; 'python3' (PID 132) 26% of a core avg, present in 3/5 samples, ~42% of measured load.",
+    "responsible_pids": [
+     131,
+     132
+    ],
+    "evidence": [
+     {
+      "name": "CPU utilisation",
+      "cls": "utilization",
+      "status": "present",
+      "detail": "CPU utilisation 100% (threshold 85%); baseline median 1.0, z=19.8 - exceeded in 3/5 samples"
+     },
+     {
+      "name": "CPU PSI (some)",
+      "cls": "stall",
+      "status": "present",
+      "detail": "CPU PSI some 99.8% (threshold 10%); baseline median 0.0, z=99.7 - exceeded in 3/5 samples"
+     },
+     {
+      "name": "Run queue",
+      "cls": "saturation",
+      "status": "present",
+      "detail": "2.00 runnable tasks per core (procs_running) (threshold 1.25); baseline median 0.0, z=8.0 - exceeded in 3/5 samples"
+     },
+     {
+      "name": "Load average",
+      "cls": "supporting",
+      "status": "absent",
+      "detail": "load1/core 0.21 (threshold 1.0; includes uninterruptible I/O waiters) - exceeded in 0/5 samples"
+     },
+     {
+      "name": "Context switches",
+      "cls": "supporting",
+      "status": "absent",
+      "detail": "context switches 297/s per core; baseline median 40.0, z=0.5 - exceeded in 0/5 samples"
+     }
+    ],
+    "contradicting": [],
+    "missing": []
+   }
+  },
+  "diagnostic_reliability": {
+   "target_confirmed": true,
+   "only_target_confirmed": true,
+   "other_resources_confirmed": [],
+   "note": "Other resources may be genuine side effects of the stress (e.g. memory pressure causing swap I/O); the harness cannot tell side effects from false alarms."
+  },
+  "attribution": {
+   "correct": 28,
+   "wrong": 0,
+   "abstained": 0,
+   "reliability": 1.0,
+   "workload_pids_known": true
+  },
+  "expected": "CONFIRMED contention on CPU during stress",
+  "stress_effective": {
+   "effective": true,
+   "evidence": "CPU 100.0% busy, kernel CPU stall (PSI some) 99.874% (needs >= 90% and >= 10%)"
+  },
+  "verdict": "PASS",
+  "recovery": {
+   "applicable": true,
+   "detector_clear_s": 3.06,
+   "metric": "cpu_percent",
+   "metric_back_near_baseline_s": 1.06,
+   "recovered_within_window": true,
+   "observed_recovery_samples": 7
+  },
+  "cleanup": {
+   "leftover_workload_pids": [],
+   "ok": true
+  },
+  "verified": [
+   "Measured: metric means per phase, detection latency, recovery times, PIDs of the workload processes (read from the OS), whether any workload process survived cleanup."
+  ],
+  "inferred": [
+   "Inferred (not independently verified): the 'likely cause' text of each diagnosis and any statement about side-effect resources."
+  ]
+ }
+}

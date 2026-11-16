@@ -1,0 +1,17 @@
+{
+  "interval": 2,
+  "window": 5,
+  "required": 3,
+  "thresholds": {
+    "cpu": 85,
+    "psi_mem_full": 1.5,
+    "disk_await_ms": 50
+  },
+  "baseline": {
+    "enabled": true,
+    "window": 300,
+    "min_samples": 60,
+    "z": 4.0,
+    "adopt_after": 900
+  }
+}
