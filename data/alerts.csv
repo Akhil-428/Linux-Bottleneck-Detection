@@ -1,0 +1,2 @@
+timestamp,resource,severity,diagnosis,recommendation,state,confidence,method,device,duration_s,likely_cause,responsible,evidence
+2026-11-16 20:30:59,Process,INFO,CPU-intensive process: 'gnome-shell' (PID 2848) at 171% of a core in 3/3 samples,Verify the process is expected; profile it or limit it with nice/cgroups.,ELEVATED,LOW,static,cpu:2848,2.1,"A single process is consistently busy. That is a statement about the process, not proof of system-wide contention.",,

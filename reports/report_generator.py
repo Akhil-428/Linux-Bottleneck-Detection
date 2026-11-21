@@ -43,7 +43,7 @@ def generate(data_dir=ROOT / "data", out=ROOT / "reports" / "summary.md"):
         for c in ("confidence", "method", "device", "responsible"):
             if c not in al.columns:
                 al[c] = ""
-        al = al.fillna("")
+        al = al.astype(object).fillna("")
         real = al[~al["state"].isin(["ELEVATED", "RECOVERED"])]
         lines += ["", "Only POTENTIAL/CONFIRMED rows are contention findings. ELEVATED means 'busy, nothing waiting'.", "",
                   "Counts by resource / state / severity:"]
@@ -56,19 +56,21 @@ def generate(data_dir=ROOT / "data", out=ROOT / "reports" / "summary.md"):
             lines += ["", "No contention (POTENTIAL/CONFIRMED) was diagnosed in this period."]
     else:
         lines.append("None.")
-    exp = data_dir / "experiments"
-    if exp.is_dir():
-        rows = []
-        for d in sorted(exp.iterdir()):
-            try:
-                r = json.loads((d / "report.json").read_text())
-                rows.append(f"| {r['run_id']} | {r['kind']} | {r['evaluation']['verdict']} |")
-            except (OSError, ValueError, KeyError):
-                continue
-        if rows:
-            lines += ["", "## Controlled experiments", "", "| Run | Kind | Verdict |", "|---|---|---|"] + rows
-            if (exp / "suite.md").exists():
-                lines += ["", f"Aggregate validation: `{exp / 'suite.md'}`"]
+    for exp_name in ("experiments", "campaign_runs"):
+        exp = data_dir / exp_name
+        if exp.is_dir():
+            rows = []
+            for d in sorted(exp.iterdir()):
+                try:
+                    r = json.loads((d / "report.json").read_text())
+                    rows.append(f"| {r['run_id']} | {r['kind']} | {r['evaluation']['verdict']} |")
+                except (OSError, ValueError, KeyError):
+                    continue
+            if rows:
+                heading = "Controlled experiments" if exp_name == "experiments" else f"Campaign experiments ({exp_name})"
+                lines += ["", f"## {heading}", "", "| Run | Kind | Verdict |", "|---|---|---|"] + rows
+                if (exp / "suite.md").exists():
+                    lines += ["", f"Aggregate validation: `{exp / 'suite.md'}`"]
     Path(out).write_text("\n".join(lines) + "\n")
     return out
 

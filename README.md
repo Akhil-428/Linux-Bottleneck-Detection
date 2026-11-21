@@ -138,7 +138,7 @@ Likely cause: Device-level saturation with tasks actually waiting on I/O ...
 Pooled false-positive rate over baseline phases and controls: **0/160 samples**. Caveats: n = 1 per experiment (no statistical confidence), one machine; alerts on *other* resources occurred during stress (e.g. CPU/Disk during the memory test: plausible side effects, which the harness cannot tell from false alarms and scores conservatively). In the calibration table `CONFIRMED/HIGH` was right 28/28 and `POTENTIAL/LOW` 0/28; that sample is tiny and polluted by those side effects. Treat all of this as evidence, not proof.
 
 ## 14. Testing and validation
-`python -m unittest discover -s tests -v` (175 tests, about 1 minute: roughly 55 s of that is real short experiment runs and process-cleanup checks; everything else uses mocked metrics or fake `/proc` trees and is deterministic).
+`python -m unittest discover -s tests -v` (189 tests across 10 modules, about 1 minute: roughly 55 s of that is real short experiment runs and process-cleanup checks; everything else uses mocked metrics or fake `/proc` trees and is deterministic).
 Covered: normal behaviour, temporary spikes, sustained CPU/memory/disk pressure, false-positive scenarios (busy CPU, high RAM use with cache, high throughput), missing/NaN/inf/None/string metrics, missing PSI and unsupported interfaces, changing process rankings, PID reuse and termination, baseline warm-up/freeze/adoption/persistence, recovery events, config validation, strict JSON, counter resets, experiment safety refusals, real process cleanup including SIGKILL of the supervisor, evaluation maths on synthetic timelines, runner cancel handling, dashboard logic. Deliberately breaking the state rules (mutation checks) is caught by the suite.
 Two bugs were found *only* by real experiments: a baseline false positive on busy-but-uncontended CPU (caught by the `cpu-benign` run) and a misleading FAIL verdict when a memory stress never produced pressure (now reported as `INEFFECTIVE_STRESS`).
 
@@ -167,6 +167,21 @@ python experiment.py report                      # re-aggregate saved runs
 python experiment.py cancel                      # stop a running experiment cleanly (also Ctrl+C)
 ```
 The dashboard's **Experiments** tab runs the same commands (behind a confirmation checkbox); the **Results** tab shows the reports.
+
+### Automated campaign and packaging
+```bash
+python campaign_runner.py                # show the 15-run plan (5 categories x 3 repeats), run nothing
+python campaign_runner.py --dry-run      # simulate manifest checkpointing, no load
+python campaign_runner.py --test         # one harmless 5 s control run
+python campaign_runner.py --run          # execute the campaign (resumable; Ctrl+C is safe)
+python package_project.py                # verify essential files, build dist/*.tar.gz + SHA256SUMS
+```
+`campaign_runner.py` writes to `data/campaign_runs/` (manifest, per-run reports, aggregate `suite.md/json`), uses deliberately
+conservative bounds (no root, `nice 10`, 10% of *available* RAM, 64 MB disk files) and a lock file to refuse concurrent campaigns.
+Campaign results (36-core / 62 GB host, 15 formal runs + 1 earlier control = 16 in `suite.md`): control and cpu-benign **PASS** (0/250
+false-positive samples); disk **PARTIAL** (POTENTIAL detected ~3 s, correct attribution, never CONFIRMED); cpu and memory
+**INEFFECTIVE_STRESS** (the safety-bounded workload created no kernel-visible pressure on such a large host, so the confirmed
+path was not exercised there). See `reports/COMPREHENSIVE_REPORT.md` and `reports/VIVA_DEFENSE_GUIDE.md`.
 
 ## 16. Dependencies and permissions
 Tested on Python 3.12 (older 3.x not tested), `psutil`, `pandas`, `matplotlib`, `streamlit` (dashboard only). Linux only. No root needed; as non-root, per-process I/O of other users' processes is unavailable (reported as unavailable, so disk attribution degrades to "unavailable"). Optional: `stress-ng`, `/proc/schedstat`, PSI. No new third-party dependency was added in V2.

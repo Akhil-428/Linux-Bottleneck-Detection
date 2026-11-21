@@ -1,0 +1,2485 @@
+{
+ "run_id": "20261118-235119-disk",
+ "kind": "disk",
+ "status": "completed",
+ "plan": {
+  "kind": "disk",
+  "duration": 15.0,
+  "cores": 36,
+  "warnings": [
+   "Will repeatedly write/fsync up to 64 MB x 2 worker(s) inside a private directory under /var/tmp (ext4); files are deleted afterwards."
+  ],
+  "notes": [],
+  "backend": "builtin",
+  "workers": 2,
+  "disk_mb": 64,
+  "disk_base": "/var/tmp",
+  "disk_fs": "ext4"
+ },
+ "params": {
+  "duration": 15.0,
+  "baseline_s": 10.0,
+  "recovery_s": 15.0,
+  "interval": 1.0,
+  "window": 5,
+  "required": 3
+ },
+ "marks": {
+  "baseline_start": 0.0,
+  "stress_start": 10.05,
+  "stress_end": 25.13,
+  "end": 32.23
+ },
+ "environment": {
+  "python": "3.12.3",
+  "kernel": "7.0.0-38-generic",
+  "cores": 36,
+  "mem_total_mb": 63930,
+  "psi_cpu": true,
+  "psi_memory": true,
+  "psi_io": true,
+  "schedstat": true,
+  "uid": 1000
+ },
+ "workload_pids": [
+  17447,
+  17448
+ ],
+ "leftover_pids": [],
+ "timeline": [
+  {
+   "t": 1.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 5.244941427050053,
+    "iowait_percent": 0.0,
+    "load1": 4.88,
+    "runq_wait_per_core": 0.00026426569761584917,
+    "procs_running": 3,
+    "ctx_switches_s": 17155.84706128013,
+    "psi_cpu_some_pct": 0.1477814544618955,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.47344213669796,
+    "mem_available_mb": 59791.375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.3998243318447476,
+    "disk_await_ms": 6.5,
+    "disk_queue": 0.013998243318447475,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.10154975621641583,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 9.998745227462483e-05,
+    "psi_io": 0.37
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 2.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 8.849804578447793,
+    "iowait_percent": 0.0,
+    "load1": 7.13,
+    "runq_wait_per_core": 0.0015197714574100164,
+    "procs_running": 1,
+    "ctx_switches_s": 36879.61134397747,
+    "psi_cpu_some_pct": 0.2615114259572132,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.482301947484174,
+    "mem_available_mb": 59785.7109375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.6000262163454223,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.00700030585736326,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.019532103396660883,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.3
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 3.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 10.980061780398763,
+    "iowait_percent": 0.02808199943836001,
+    "load1": 7.13,
+    "runq_wait_per_core": 0.0020527372187752048,
+    "procs_running": 2,
+    "ctx_switches_s": 38763.77385213758,
+    "psi_cpu_some_pct": 0.3783977924272227,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.469055002805199,
+    "mem_available_mb": 59794.1796875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.7999894988609961,
+    "disk_await_ms": 4.75,
+    "disk_queue": 0.02099987748671162,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.10156190748781661,
+    "psi_io_some_pct": 0.051399700134141774,
+    "psi_io_full_pct": 0.0501997071349011,
+    "psi_io": 0.3
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 4.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 7.7637130801687775,
+    "iowait_percent": 0.0,
+    "load1": 7.13,
+    "runq_wait_per_core": 0.000792770253010837,
+    "procs_running": 4,
+    "ctx_switches_s": 28657.03497122174,
+    "psi_cpu_some_pct": 0.2361755638591268,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.46983711024012,
+    "mem_available_mb": 59793.6796875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.399855162585849,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.012998655081154312,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.02343507526650417,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.24
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 5.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 7.227221597300337,
+    "iowait_percent": 0.0,
+    "load1": 7.13,
+    "runq_wait_per_core": 0.0002443935387337308,
+    "procs_running": 10,
+    "ctx_switches_s": 30382.2094246981,
+    "psi_cpu_some_pct": 0.15651653362405785,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.460910087096217,
+    "mem_available_mb": 59799.38671875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.4001479046241594,
+    "disk_await_ms": 6.5,
+    "disk_queue": 0.014001479046241595,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.02343997608187767,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.24
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 6.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 9.708193041526375,
+    "iowait_percent": 0.0,
+    "load1": 7.13,
+    "runq_wait_per_core": 0.0012752124341249501,
+    "procs_running": 2,
+    "ctx_switches_s": 41172.17275844475,
+    "psi_cpu_some_pct": 0.2517010561376796,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.436438678683258,
+    "mem_available_mb": 59815.03125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.4000058744249164,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.013000054548231365,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.023437598344167126,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.2
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 7.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 4.410943606923507,
+    "iowait_percent": 0.0,
+    "load1": 6.56,
+    "runq_wait_per_core": 0.000400338726161022,
+    "procs_running": 1,
+    "ctx_switches_s": 15851.849470829025,
+    "psi_cpu_some_pct": 0.14079866297582175,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.431642160430032,
+    "mem_available_mb": 59818.09765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.3999867057255004,
+    "disk_await_ms": 6.5,
+    "disk_queue": 0.013999867057255005,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.023437277439601015,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.2
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 8.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 9.775910364145659,
+    "iowait_percent": 0.05602240896358543,
+    "load1": 6.56,
+    "runq_wait_per_core": 0.0008518209923780914,
+    "procs_running": 1,
+    "ctx_switches_s": 37014.213312927786,
+    "psi_cpu_some_pct": 0.2586014903205037,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.412089474557006,
+    "mem_available_mb": 59830.59765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.6000092208538517,
+    "disk_await_ms": 4.0,
+    "disk_queue": 0.016000092208538517,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.08984426777255514,
+    "psi_io_some_pct": 0.049500285270166026,
+    "psi_io_full_pct": 0.045500262218031405,
+    "psi_io": 0.16
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 9.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 9.438202247191011,
+    "iowait_percent": 0.0,
+    "load1": 6.56,
+    "runq_wait_per_core": 0.0008699915385808186,
+    "procs_running": 3,
+    "ctx_switches_s": 41689.634465283205,
+    "psi_cpu_some_pct": 0.24299786939467063,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.412150576700359,
+    "mem_available_mb": 59830.55859375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.299988601699884,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.013999877249075672,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.023437294501800793,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.16
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 10.05,
+   "phase": "baseline",
+   "metrics": {
+    "cpu_percent": 8.203125,
+    "iowait_percent": 0.0,
+    "load1": 6.56,
+    "runq_wait_per_core": 0.000551296779092656,
+    "procs_running": 1,
+    "ctx_switches_s": 27764.143920374514,
+    "psi_cpu_some_pct": 0.21629333081134547,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.414521339862464,
+    "mem_available_mb": 59829.04296875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.3999568337303914,
+    "disk_await_ms": 6.5,
+    "disk_queue": 0.012999599170353635,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.02343677735039718,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 0.13
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 11.1,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 10.565436687018847,
+    "iowait_percent": 2.3095301300769844,
+    "load1": 6.56,
+    "runq_wait_per_core": 0.0008228274603837106,
+    "procs_running": 1,
+    "ctx_switches_s": 51587.886195312865,
+    "psi_cpu_some_pct": 0.30980092240233376,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.467215828290268,
+    "mem_available_mb": 59795.35546875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 61.751180484979116,
+    "disk_await_ms": 0.3454692966888089,
+    "disk_queue": 6.590275984989233,
+    "disk_read_mbs": 1109.6212124070094,
+    "disk_write_mbs": 1180.8057763530953,
+    "psi_io_some_pct": 5.058751707145621,
+    "psi_io_full_pct": 4.9657449291536295,
+    "psi_io": 0.13
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": true
+  },
+  {
+   "t": 12.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 12.945801741083965,
+    "iowait_percent": 2.3869699522606007,
+    "load1": 6.19,
+    "runq_wait_per_core": 0.00083902641837918,
+    "procs_running": 3,
+    "ctx_switches_s": 66429.03465326689,
+    "psi_cpu_some_pct": 0.34029505483225536,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.478177552807833,
+    "mem_available_mb": 59788.34765625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 62.29909466955483,
+    "disk_await_ms": 0.3455096506619876,
+    "disk_queue": 6.614903872216778,
+    "disk_read_mbs": 1151.9832593792482,
+    "disk_write_mbs": 1150.178598104586,
+    "psi_io_some_pct": 4.4420354483407625,
+    "psi_io_full_pct": 4.312537330207419,
+    "psi_io": 0.65
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "NORMAL"
+   },
+   "diagnoses": [],
+   "workload_running": true
+  },
+  {
+   "t": 13.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 9.060402684563758,
+    "iowait_percent": 2.321029082774049,
+    "load1": 6.19,
+    "runq_wait_per_core": 0.0009475047791026867,
+    "procs_running": 3,
+    "ctx_switches_s": 41376.61506336986,
+    "psi_cpu_some_pct": 0.2886042901026813,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.479558461247616,
+    "mem_available_mb": 59787.46484375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 60.100893399761425,
+    "disk_await_ms": 0.33849523712495544,
+    "disk_queue": 6.75410039970031,
+    "disk_read_mbs": 1200.0178382647873,
+    "disk_write_mbs": 1199.0998558689791,
+    "psi_io_some_pct": 4.179662130676254,
+    "psi_io_full_pct": 4.098060917674248,
+    "psi_io": 0.65
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 2.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 60%; nvme0n1: avg queue depth 6.75; nvme0n1: throughput 2399.1 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "No single process was consistently responsible: the top process changed 2 time(s) across 5 samples (agy, python).",
+     "responsible_verdict": "none",
+     "responsible_text": "No single process was consistently responsible: the top process changed 2 time(s) across 5 samples (agy, python).",
+     "responsible_pids": [],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 60% (threshold 80%); baseline median 1.4, z=11.7 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.75 (threshold 2.0) - exceeded in 3/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2399.1 MB/s; baseline median 0.0, z=479.8 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 0/5 samples",
+      "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+      "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 14.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 12.363636363636363,
+    "iowait_percent": 2.20979020979021,
+    "load1": 6.19,
+    "runq_wait_per_core": 0.0013374519474253642,
+    "procs_running": 2,
+    "ctx_switches_s": 55321.941524747584,
+    "psi_cpu_some_pct": 0.405699571175845,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.473222168981888,
+    "mem_available_mb": 59791.515625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 60.29993626301072,
+    "disk_await_ms": 0.33556978233034573,
+    "disk_queue": 6.667992951936244,
+    "disk_read_mbs": 1190.8737412473117,
+    "disk_write_mbs": 1198.0573274042663,
+    "psi_io_some_pct": 4.312795441378319,
+    "psi_io_full_pct": 4.174495587561165,
+    "psi_io": 1.08
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 3.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 60%; nvme0n1: avg queue depth 6.67; nvme0n1: throughput 2388.9 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 743230669B/s avg, present in 3/5 samples, ~50% of measured load; 'python' (PID 17447) 741579161B/s avg, present in 3/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 60% (threshold 80%); baseline median 1.4, z=11.8 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.67 (threshold 2.0) - exceeded in 4/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2388.9 MB/s; baseline median 0.0, z=477.8 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.3% (threshold 20%); baseline median 0.0, z=4.3 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.2% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.3% (threshold 20%); baseline median 0.0, z=4.3 - exceeded in 0/5 samples",
+      "I/O PSI full 4.2% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 15.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 15.275852509010257,
+    "iowait_percent": 2.19018574993069,
+    "load1": 6.19,
+    "runq_wait_per_core": 0.0025757299106443153,
+    "procs_running": 3,
+    "ctx_switches_s": 64520.849657760395,
+    "psi_cpu_some_pct": 0.4546918932981565,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.470655878961053,
+    "mem_available_mb": 59793.15625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 59.298942759139386,
+    "disk_await_ms": 0.3370385689173819,
+    "disk_queue": 6.633881724521597,
+    "disk_read_mbs": 1181.4789354118582,
+    "disk_write_mbs": 1186.3890041202424,
+    "psi_io_some_pct": 3.4587383341536477,
+    "psi_io_full_pct": 3.3518402400397864,
+    "psi_io": 1.08
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 4.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 59%; nvme0n1: avg queue depth 6.63; nvme0n1: throughput 2367.9 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 991524805B/s avg, present in 4/5 samples, ~50% of measured load; 'python' (PID 17447) 989873298B/s avg, present in 4/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 59% (threshold 80%); baseline median 1.4, z=11.6 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.63 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2367.9 MB/s; baseline median 0.0, z=473.6 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 3.5% (threshold 20%); baseline median 0.0, z=3.5 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 3.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 3.5% (threshold 20%); baseline median 0.0, z=3.5 - exceeded in 0/5 samples",
+      "I/O PSI full 3.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 16.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 7.664027149321267,
+    "iowait_percent": 2.403846153846154,
+    "load1": 6.19,
+    "runq_wait_per_core": 0.0007285142357062471,
+    "procs_running": 1,
+    "ctx_switches_s": 41132.782140596675,
+    "psi_cpu_some_pct": 0.3145906855990595,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.459168676010652,
+    "mem_available_mb": 59800.5,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 63.09813179052974,
+    "disk_await_ms": 0.3306845965770171,
+    "disk_queue": 6.612804208094662,
+    "disk_read_mbs": 1199.5894825549008,
+    "disk_write_mbs": 1202.1206576118702,
+    "psi_io_some_pct": 8.888436831164528,
+    "psi_io_full_pct": 8.762840549819193,
+    "psi_io": 1.6
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 5.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 63%; nvme0n1: avg queue depth 6.61; nvme0n1: throughput 2401.7 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1242940723B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1240791154B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 63% (threshold 80%); baseline median 1.4, z=12.3 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.61 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2401.7 MB/s; baseline median 0.0, z=480.3 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 8.9% (threshold 20%); baseline median 0.0, z=8.9 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 8.8% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.4% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 8.9% (threshold 20%); baseline median 0.0, z=8.9 - exceeded in 1/5 samples",
+      "I/O PSI full 8.8% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.4% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 17.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 11.749859786876051,
+    "iowait_percent": 2.3555804823331465,
+    "load1": 5.86,
+    "runq_wait_per_core": 0.0022930479417429045,
+    "procs_running": 5,
+    "ctx_switches_s": 51903.3357539027,
+    "psi_cpu_some_pct": 0.45702056683943537,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.4573967138534085,
+    "mem_available_mb": 59801.6328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 63.30284875478394,
+    "disk_await_ms": 0.3323898099474323,
+    "disk_queue": 6.691301121931427,
+    "disk_read_mbs": 1208.5543873642398,
+    "disk_write_mbs": 1210.824020752281,
+    "psi_io_some_pct": 5.143831482703106,
+    "psi_io_full_pct": 5.0438269823006046,
+    "psi_io": 1.6
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 6.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 63%; nvme0n1: avg queue depth 6.69; nvme0n1: throughput 2419.4 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1255777684B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1254100002B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 63% (threshold 80%); baseline median 1.4, z=12.4 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.69 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2419.4 MB/s; baseline median 0.0, z=483.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 5.1% (threshold 20%); baseline median 0.0, z=5.1 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 5.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.4% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 5.1% (threshold 20%); baseline median 0.0, z=5.1 - exceeded in 1/5 samples",
+      "I/O PSI full 5.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples",
+      "iowait 2.4% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 18.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 11.440677966101696,
+    "iowait_percent": 2.2598870056497176,
+    "load1": 5.86,
+    "runq_wait_per_core": 0.0008409435123370657,
+    "procs_running": 1,
+    "ctx_switches_s": 61810.63544084859,
+    "psi_cpu_some_pct": 0.3358980188733566,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.4569017864922476,
+    "mem_available_mb": 59801.94921875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 61.799635505726215,
+    "disk_await_ms": 0.3365856176759073,
+    "disk_queue": 6.636960855202345,
+    "disk_read_mbs": 1183.493019757718,
+    "disk_write_mbs": 1186.3836277089113,
+    "psi_io_some_pct": 4.175775371275268,
+    "psi_io_full_pct": 4.077375951635083,
+    "psi_io": 2.4
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 7.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 62%; nvme0n1: avg queue depth 6.64; nvme0n1: throughput 2369.9 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1252520987B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1250843305B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 62% (threshold 80%); baseline median 1.4, z=12.1 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.64 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2369.9 MB/s; baseline median 0.0, z=474.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 1/5 samples",
+      "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples",
+      "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 19.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 11.313868613138686,
+    "iowait_percent": 2.2459292532285233,
+    "load1": 5.86,
+    "runq_wait_per_core": 0.0006878169374366182,
+    "procs_running": 2,
+    "ctx_switches_s": 46482.25858079665,
+    "psi_cpu_some_pct": 0.2887016060469858,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.457806098213874,
+    "mem_available_mb": 59801.37109375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 62.20034602051443,
+    "disk_await_ms": 0.3416976456009913,
+    "disk_queue": 6.729037433634109,
+    "disk_read_mbs": 1186.0065977545034,
+    "disk_write_mbs": 1186.3972249275623,
+    "psi_io_some_pct": 4.51552511986548,
+    "psi_io_full_pct": 4.398624469547182,
+    "psi_io": 2.4
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 8.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 62%; nvme0n1: avg queue depth 6.73; nvme0n1: throughput 2372.4 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17447), 'python' (PID 17448)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17447) 1249901806B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17448) 1249901766B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17447,
+      17448
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 62% (threshold 80%); baseline median 1.4, z=12.2 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.73 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2372.4 MB/s; baseline median 0.0, z=474.5 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.5% (threshold 20%); baseline median 0.0, z=4.5 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.5% (threshold 20%); baseline median 0.0, z=4.5 - exceeded in 1/5 samples",
+      "I/O PSI full 4.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 20.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 11.192350956130484,
+    "iowait_percent": 2.249718785151856,
+    "load1": 5.86,
+    "runq_wait_per_core": 0.0017465873058671495,
+    "procs_running": 23,
+    "ctx_switches_s": 50282.309875301136,
+    "psi_cpu_some_pct": 0.3876946788905644,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.456131899485997,
+    "mem_available_mb": 59802.44140625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 62.39914357175965,
+    "disk_await_ms": 0.3331792738663791,
+    "disk_queue": 6.595909471143056,
+    "disk_read_mbs": 1193.9836125750164,
+    "disk_write_mbs": 1190.397724291333,
+    "psi_io_some_pct": 4.545137617986571,
+    "psi_io_full_pct": 4.422639299275985,
+    "psi_io": 2.69
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 9.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 62%; nvme0n1: avg queue depth 6.60; nvme0n1: throughput 2384.4 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1252341503B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1250611439B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 62% (threshold 80%); baseline median 1.4, z=12.2 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.60 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2384.4 MB/s; baseline median 0.0, z=476.9 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.5% (threshold 20%); baseline median 0.0, z=4.5 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.5% (threshold 20%); baseline median 0.0, z=4.5 - exceeded in 1/5 samples",
+      "I/O PSI full 4.4% (threshold 5%; all non-idle tasks stalled) - exceeded in 2/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 21.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 12.225969645868465,
+    "iowait_percent": 2.2484541877459248,
+    "load1": 5.86,
+    "runq_wait_per_core": 0.0026010635051138663,
+    "procs_running": 2,
+    "ctx_switches_s": 61740.83090813119,
+    "psi_cpu_some_pct": 0.3999053819268167,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.46000577537459,
+    "mem_available_mb": 59799.96484375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 63.7008572861671,
+    "disk_await_ms": 0.3296658097686375,
+    "disk_queue": 6.531087895383946,
+    "disk_read_mbs": 1183.3909260756357,
+    "disk_write_mbs": 1193.9379430173947,
+    "psi_io_some_pct": 3.7844509311423984,
+    "psi_io_full_pct": 3.6856496014740574,
+    "psi_io": 2.69
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 10.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 64%; nvme0n1: avg queue depth 6.53; nvme0n1: throughput 2377.3 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1250152271B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1247294934B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 64% (threshold 80%); baseline median 1.4, z=12.5 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.53 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2377.3 MB/s; baseline median 0.0, z=475.5 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 3.8% (threshold 20%); baseline median 0.0, z=3.8 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 3.7% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 3.8% (threshold 20%); baseline median 0.0, z=3.8 - exceeded in 0/5 samples",
+      "I/O PSI full 3.7% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 22.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 9.35072142064373,
+    "iowait_percent": 2.3029966703662597,
+    "load1": 5.71,
+    "runq_wait_per_core": 0.0007589329437474706,
+    "procs_running": 5,
+    "ctx_switches_s": 35038.138470724734,
+    "psi_cpu_some_pct": 0.3254012859858961,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.45476932168922,
+    "mem_available_mb": 59803.3125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 62.90024858178509,
+    "disk_await_ms": 0.32456996148908857,
+    "disk_queue": 6.44402546678892,
+    "disk_read_mbs": 1192.629713272678,
+    "disk_write_mbs": 1190.4461108930811,
+    "psi_io_some_pct": 6.7065265041930315,
+    "psi_io_full_pct": 6.5832260169095,
+    "psi_io": 2.93
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 11.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 63%; nvme0n1: avg queue depth 6.44; nvme0n1: throughput 2383.1 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1247098010B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1242038635B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 63% (threshold 80%); baseline median 1.4, z=12.3 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.44 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2383.1 MB/s; baseline median 0.0, z=476.6 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 6.7% (threshold 20%); baseline median 0.0, z=6.7 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 6.6% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 6.7% (threshold 20%); baseline median 0.0, z=6.7 - exceeded in 0/5 samples",
+      "I/O PSI full 6.6% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 23.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 12.710911136107987,
+    "iowait_percent": 2.249718785151856,
+    "load1": 5.71,
+    "runq_wait_per_core": 0.0015342831453403441,
+    "procs_running": 2,
+    "ctx_switches_s": 52990.61359243555,
+    "psi_cpu_some_pct": 0.35439741573397665,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.469592701666707,
+    "mem_available_mb": 59793.8359375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 61.599550816063676,
+    "disk_await_ms": 0.32846982533207825,
+    "disk_queue": 6.402953309663242,
+    "disk_read_mbs": 1163.9915121736706,
+    "disk_write_mbs": 1174.0539387984538,
+    "psi_io_some_pct": 3.625873560129306,
+    "psi_io_full_pct": 3.532274242655547,
+    "psi_io": 2.93
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 12.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 62%; nvme0n1: avg queue depth 6.40; nvme0n1: throughput 2338.0 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1242825197B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1239495960B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 62% (threshold 80%); baseline median 1.4, z=12.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.40 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2338.0 MB/s; baseline median 0.0, z=467.6 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 3.6% (threshold 20%); baseline median 0.0, z=3.6 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 3.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 3.6% (threshold 20%); baseline median 0.0, z=3.6 - exceeded in 0/5 samples",
+      "I/O PSI full 3.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 24.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 10.830527497194165,
+    "iowait_percent": 2.3288439955106623,
+    "load1": 5.71,
+    "runq_wait_per_core": 0.0009661156011847785,
+    "procs_running": 2,
+    "ctx_switches_s": 62575.576551084014,
+    "psi_cpu_some_pct": 0.3333977438975232,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.467001970788531,
+    "mem_available_mb": 59795.4921875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 63.09957300520011,
+    "disk_await_ms": 0.3328917872427145,
+    "disk_queue": 6.652954979454774,
+    "disk_read_mbs": 1199.9918796551524,
+    "disk_write_mbs": 1201.4567134926222,
+    "psi_io_some_pct": 4.596368896372452,
+    "psi_io_full_pct": 4.460469816001506,
+    "psi_io": 3.12
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 13.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 63%; nvme0n1: avg queue depth 6.65; nvme0n1: throughput 2401.4 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1245990689B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1242376376B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 63% (threshold 80%); baseline median 1.4, z=12.3 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.65 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2401.4 MB/s; baseline median 0.0, z=480.3 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 4.6% (threshold 20%); baseline median 0.0, z=4.6 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 4.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 4.6% (threshold 20%); baseline median 0.0, z=4.6 - exceeded in 0/5 samples",
+      "I/O PSI full 4.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 25.11,
+   "phase": "stress",
+   "metrics": {
+    "cpu_percent": 12.27285434721834,
+    "iowait_percent": 2.2085546547386077,
+    "load1": 5.71,
+    "runq_wait_per_core": 0.0015655083039607617,
+    "procs_running": 6,
+    "ctx_switches_s": 46706.14772759913,
+    "psi_cpu_some_pct": 0.3959842960548354,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.458863165293885,
+    "mem_available_mb": 59800.6953125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 60.49760078615542,
+    "disk_await_ms": 0.3355383675961734,
+    "disk_queue": 6.701734222625018,
+    "disk_read_mbs": 1199.9524122873802,
+    "disk_write_mbs": 1203.7803854776198,
+    "psi_io_some_pct": 3.60465704651129,
+    "psi_io_full_pct": 3.491561531653204,
+    "psi_io": 3.12
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 14.0,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 60%; nvme0n1: avg queue depth 6.70; nvme0n1: throughput 2403.7 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "Several processes generate I/O ('python' (PID 17448), 'python' (PID 17447)); stagger them or use faster storage.",
+     "responsible_verdict": "multiple",
+     "responsible_text": "Multiple contributors: 'python' (PID 17448) 1247454801B/s avg, present in 5/5 samples, ~50% of measured load; 'python' (PID 17447) 1245829447B/s avg, present in 5/5 samples, ~50% of measured load.",
+     "responsible_pids": [
+      17448,
+      17447
+     ],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 60% (threshold 80%); baseline median 1.4, z=11.8 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 6.70 (threshold 2.0) - exceeded in 5/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 2403.7 MB/s; baseline median 0.0, z=480.7 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 3.6% (threshold 20%); baseline median 0.0, z=3.6 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 3.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 3.6% (threshold 20%); baseline median 0.0, z=3.6 - exceeded in 0/5 samples",
+      "I/O PSI full 3.5% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 2.2% of CPU time (threshold 20%); baseline median 0.0, z=1.1 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": true
+  },
+  {
+   "t": 26.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 7.511266900350526,
+    "iowait_percent": 0.07511266900350526,
+    "load1": 5.71,
+    "runq_wait_per_core": 0.0007469363303500385,
+    "procs_running": 5,
+    "ctx_switches_s": 33654.91969982702,
+    "psi_cpu_some_pct": 0.20058164156471864,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.4210775998442635,
+    "mem_available_mb": 59824.8515625,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 2.8997345988917447,
+    "disk_await_ms": 0.3079268292682927,
+    "disk_queue": 0.20598114736955153,
+    "disk_read_mbs": 43.9959732245644,
+    "disk_write_mbs": 36.15294106592402,
+    "psi_io_some_pct": 0.12588847793119678,
+    "psi_io_full_pct": 0.12398865181468151,
+    "psi_io": 2.92
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 15.1,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 3%; nvme0n1: avg queue depth 0.21; nvme0n1: throughput 80.1 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "No single process was consistently responsible: the top process changed 4 time(s) across 5 samples (python).",
+     "responsible_verdict": "none",
+     "responsible_text": "No single process was consistently responsible: the top process changed 4 time(s) across 5 samples (python).",
+     "responsible_pids": [],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 3% (threshold 80%); baseline median 1.4, z=0.3 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 0.21 (threshold 2.0) - exceeded in 4/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 80.1 MB/s; baseline median 0.0, z=16.0 - exceeded in 5/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 0.1% (threshold 20%); baseline median 0.0, z=0.1 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 0.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 0.1% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+      "I/O PSI some 0.1% (threshold 20%); baseline median 0.0, z=0.1 - exceeded in 0/5 samples",
+      "I/O PSI full 0.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 1/5 samples",
+      "iowait 0.1% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": false
+  },
+  {
+   "t": 27.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 7.787114845938375,
+    "iowait_percent": 0.0,
+    "load1": 5.33,
+    "runq_wait_per_core": 0.0008907831909598352,
+    "procs_running": 1,
+    "ctx_switches_s": 37334.2466673567,
+    "psi_cpu_some_pct": 0.2442016134399879,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.420283271980671,
+    "mem_available_mb": 59825.359375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.7000046249303502,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.007000046249303502,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062758087631145,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 2.92
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "POTENTIAL"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "POTENTIAL",
+     "severity": "WARNING",
+     "confidence": "LOW",
+     "method": "static+baseline",
+     "duration_s": 16.1,
+     "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 1%; nvme0n1: avg queue depth 0.01; nvme0n1: throughput 0.0 MB/s",
+     "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+     "recommendation": "No single process was consistently responsible: the top process changed 4 time(s) across 5 samples (agy, python).",
+     "responsible_verdict": "none",
+     "responsible_text": "No single process was consistently responsible: the top process changed 4 time(s) across 5 samples (agy, python).",
+     "responsible_pids": [],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 1% (threshold 80%); baseline median 1.4, z=-0.1 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 7.0 ms (threshold 30 ms); baseline median 6.5, z=0.2 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "present",
+       "detail": "nvme0n1: avg queue depth 0.01 (threshold 2.0) - exceeded in 3/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 0.0 MB/s; baseline median 0.0, z=-0.0 - exceeded in 4/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 0.0% (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 0.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 0.0% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 7.0 ms (threshold 30 ms); baseline median 6.5, z=0.2 - exceeded in 0/5 samples",
+      "I/O PSI some 0.0% (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples",
+      "I/O PSI full 0.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+      "iowait 0.0% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": false
+  },
+  {
+   "t": 28.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 7.752588860901204,
+    "iowait_percent": 0.0,
+    "load1": 5.33,
+    "runq_wait_per_core": 0.001420848245380136,
+    "procs_running": 2,
+    "ctx_switches_s": 20515.005949363444,
+    "psi_cpu_some_pct": 0.25340007348616606,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.423344489362667,
+    "mem_available_mb": 59823.40234375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 96.0000278400629,
+    "disk_await_ms": 517.0,
+    "disk_queue": 1.5510004497910161,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.05078126472659577,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 2.39
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "ELEVATED"
+   },
+   "diagnoses": [
+    {
+     "resource": "Disk I/O",
+     "device": "nvme0n1",
+     "state": "ELEVATED",
+     "severity": "INFO",
+     "confidence": "LOW",
+     "method": "baseline",
+     "duration_s": 17.1,
+     "headline": "Disk I/O [nvme0n1] high utilisation, no contention evidence: nvme0n1: busy 96%; nvme0n1: throughput 0.1 MB/s",
+     "likely_cause": "The device is busy but tasks are not stalled and latency is normal: heavy but healthy I/O (high utilisation or throughput alone is not a problem; on SSD/NVMe %util can reach 100% without saturation).",
+     "recommendation": "No action needed unless I/O PSI or latency rise.",
+     "responsible_verdict": "none",
+     "responsible_text": "No single process was consistently responsible: the top process changed 3 time(s) across 5 samples (agy, python).",
+     "responsible_pids": [],
+     "evidence": [
+      {
+       "name": "nvme0n1 utilisation",
+       "cls": "utilization",
+       "status": "present",
+       "detail": "nvme0n1: busy 96% (threshold 80%); baseline median 1.4, z=18.9 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "nvme0n1 latency",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg latency 517.0 ms (threshold 30 ms); baseline median 6.5, z=255.2 - exceeded in 1/5 samples"
+      },
+      {
+       "name": "nvme0n1 queue depth",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "nvme0n1: avg queue depth 1.55 (threshold 2.0) - exceeded in 2/5 samples"
+      },
+      {
+       "name": "nvme0n1 throughput",
+       "cls": "supporting",
+       "status": "present",
+       "detail": "nvme0n1: throughput 0.1 MB/s; baseline median 0.0, z=0.0 - exceeded in 3/5 samples"
+      },
+      {
+       "name": "I/O PSI (some)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI some 0.0% (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+      },
+      {
+       "name": "I/O PSI (full)",
+       "cls": "stall",
+       "status": "absent",
+       "detail": "I/O PSI full 0.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+      },
+      {
+       "name": "iowait",
+       "cls": "saturation",
+       "status": "absent",
+       "detail": "iowait 0.0% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+      }
+     ],
+     "contradicting": [
+      "nvme0n1: avg latency 517.0 ms (threshold 30 ms); baseline median 6.5, z=255.2 - exceeded in 1/5 samples",
+      "nvme0n1: avg queue depth 1.55 (threshold 2.0) - exceeded in 2/5 samples",
+      "I/O PSI some 0.0% (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples",
+      "I/O PSI full 0.0% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+      "iowait 0.0% of CPU time (threshold 20%); baseline median 0.0, z=0.0 - exceeded in 0/5 samples"
+     ],
+     "missing": []
+    }
+   ],
+   "workload_running": false
+  },
+  {
+   "t": 29.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 9.910414333706608,
+    "iowait_percent": 0.0,
+    "load1": 5.33,
+    "runq_wait_per_core": 0.0011980000509228526,
+    "procs_running": 1,
+    "ctx_switches_s": 35844.6433099286,
+    "psi_cpu_some_pct": 0.2700973122614512,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.422342414211673,
+    "mem_available_mb": 59824.04296875,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.3999860687376215,
+    "disk_await_ms": 6.5,
+    "disk_queue": 0.012999870638277915,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.027343477905031673,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 2.39
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "RECOVERED"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 30.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 9.123985446403582,
+    "iowait_percent": 0.0,
+    "load1": 5.33,
+    "runq_wait_per_core": 0.001146650146100452,
+    "procs_running": 3,
+    "ctx_switches_s": 44662.42657085418,
+    "psi_cpu_some_pct": 0.2791026657096727,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.426326273958304,
+    "mem_available_mb": 59821.49609375,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 0.6000057306549753,
+    "disk_await_ms": 7.0,
+    "disk_queue": 0.007000066857641378,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.0039062873089516625,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 1.95
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "RECOVERED"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 31.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 7.094972067039105,
+    "iowait_percent": 3.0446927374301676,
+    "load1": 5.33,
+    "runq_wait_per_core": 0.0006656900456154098,
+    "procs_running": 2,
+    "ctx_switches_s": 21089.813402743028,
+    "psi_cpu_some_pct": 0.17029041877991263,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.423405591506021,
+    "mem_available_mb": 59823.36328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 96.99454269906944,
+    "disk_await_ms": 314.4,
+    "disk_queue": 1.5719115579684244,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.15624120924463505,
+    "psi_io_some_pct": 19.80548566415865,
+    "psi_io_full_pct": 17.955189769206502,
+    "psi_io": 1.95
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "RECOVERED"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  },
+  {
+   "t": 32.23,
+   "phase": "recovery",
+   "metrics": {
+    "cpu_percent": 8.424293310943185,
+    "iowait_percent": 0.0,
+    "load1": 4.98,
+    "runq_wait_per_core": 0.0019231680363403468,
+    "procs_running": 1,
+    "ctx_switches_s": 30592.799009538205,
+    "psi_cpu_some_pct": 0.3107182717878958,
+    "psi_cpu": 0.0,
+    "mem_percent": 6.425330309021645,
+    "mem_available_mb": 59822.1328125,
+    "swap_in_s": 0.0,
+    "swap_out_s": 0.0,
+    "psi_mem_some_pct": 0.0,
+    "psi_mem_full_pct": 0.0,
+    "psi_mem": 0.0,
+    "disk_util": 1.4000823318411784,
+    "disk_await_ms": 4.333333333333333,
+    "disk_queue": 0.014000823318411784,
+    "disk_read_mbs": 0.0,
+    "disk_write_mbs": 0.10156847273401405,
+    "psi_io_some_pct": 0.0,
+    "psi_io_full_pct": 0.0,
+    "psi_io": 3.23
+   },
+   "status": {
+    "CPU": "NORMAL",
+    "Memory": "NORMAL",
+    "Disk I/O": "RECOVERED"
+   },
+   "diagnoses": [],
+   "workload_running": false
+  }
+ ],
+ "evaluation": {
+  "kind": "disk",
+  "target": "Disk I/O",
+  "status": "completed",
+  "samples": {
+   "baseline": 10,
+   "stress": 15,
+   "recovery": 7
+  },
+  "false_positives_baseline": {
+   "samples": 10,
+   "positive_samples": 0,
+   "rate": 0.0
+  },
+  "phase_means": {
+   "baseline": {
+    "cpu_percent": 8.16,
+    "psi_cpu_some_pct": 0.229,
+    "runq_wait_per_core": 0.001,
+    "procs_running": 2.8,
+    "mem_percent": 6.446,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 1.37,
+    "disk_await_ms": 6.275,
+    "psi_io_some_pct": 0.01,
+    "disk_write_mbs": 0.045,
+    "disk_read_mbs": 0.0
+   },
+   "stress": {
+    "cpu_percent": 11.398,
+    "psi_cpu_some_pct": 0.359,
+    "runq_wait_per_core": 0.001,
+    "procs_running": 4.067,
+    "mem_percent": 6.464,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 61.89,
+    "disk_await_ms": 0.335,
+    "psi_io_some_pct": 4.736,
+    "disk_write_mbs": 1190.289,
+    "disk_read_mbs": 1183.037
+   },
+   "recovery": {
+    "cpu_percent": 8.229,
+    "psi_cpu_some_pct": 0.247,
+    "runq_wait_per_core": 0.001,
+    "procs_running": 2.143,
+    "mem_percent": 6.423,
+    "psi_mem_some_pct": 0.0,
+    "swap_out_s": 0.0,
+    "disk_util": 28.571,
+    "disk_await_ms": 122.363,
+    "psi_io_some_pct": 2.847,
+    "disk_write_mbs": 5.214,
+    "disk_read_mbs": 6.285
+   }
+  },
+  "resources_confirmed_during_stress": [],
+  "resources_positive_during_stress": [
+   "Disk I/O"
+  ],
+  "detection": {
+   "confirmed": false,
+   "potential_or_confirmed": true,
+   "latency_confirmed_s": null,
+   "latency_potential_s": 3.06,
+   "confirmed_fraction_of_stress_samples": 0.0,
+   "first_diagnosis": {
+    "resource": "Disk I/O",
+    "device": "nvme0n1",
+    "state": "POTENTIAL",
+    "severity": "WARNING",
+    "confidence": "LOW",
+    "method": "static+baseline",
+    "duration_s": 2.0,
+    "headline": "Disk I/O [nvme0n1] potential pressure: nvme0n1: busy 60%; nvme0n1: avg queue depth 6.75; nvme0n1: throughput 2399.1 MB/s",
+    "likely_cause": "The device is slow or queued, but the kernel reports no task stalls: likely background I/O (writeback) not yet hurting foreground work.",
+    "recommendation": "No single process was consistently responsible: the top process changed 2 time(s) across 5 samples (agy, python).",
+    "responsible_verdict": "none",
+    "responsible_text": "No single process was consistently responsible: the top process changed 2 time(s) across 5 samples (agy, python).",
+    "responsible_pids": [],
+    "evidence": [
+     {
+      "name": "nvme0n1 utilisation",
+      "cls": "utilization",
+      "status": "present",
+      "detail": "nvme0n1: busy 60% (threshold 80%); baseline median 1.4, z=11.7 - exceeded in 3/5 samples"
+     },
+     {
+      "name": "nvme0n1 latency",
+      "cls": "saturation",
+      "status": "absent",
+      "detail": "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples"
+     },
+     {
+      "name": "nvme0n1 queue depth",
+      "cls": "saturation",
+      "status": "present",
+      "detail": "nvme0n1: avg queue depth 6.75 (threshold 2.0) - exceeded in 3/5 samples"
+     },
+     {
+      "name": "nvme0n1 throughput",
+      "cls": "supporting",
+      "status": "present",
+      "detail": "nvme0n1: throughput 2399.1 MB/s; baseline median 0.0, z=479.8 - exceeded in 3/5 samples"
+     },
+     {
+      "name": "I/O PSI (some)",
+      "cls": "stall",
+      "status": "absent",
+      "detail": "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 0/5 samples"
+     },
+     {
+      "name": "I/O PSI (full)",
+      "cls": "stall",
+      "status": "absent",
+      "detail": "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples"
+     },
+     {
+      "name": "iowait",
+      "cls": "saturation",
+      "status": "absent",
+      "detail": "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+     }
+    ],
+    "contradicting": [
+     "nvme0n1: avg latency 0.3 ms (threshold 30 ms); baseline median 6.5, z=-3.1 - exceeded in 0/5 samples",
+     "I/O PSI some 4.2% (threshold 20%); baseline median 0.0, z=4.2 - exceeded in 0/5 samples",
+     "I/O PSI full 4.1% (threshold 5%; all non-idle tasks stalled) - exceeded in 0/5 samples",
+     "iowait 2.3% of CPU time (threshold 20%); baseline median 0.0, z=1.2 - exceeded in 0/5 samples"
+    ],
+    "missing": []
+   }
+  },
+  "diagnostic_reliability": {
+   "target_confirmed": false,
+   "only_target_confirmed": false,
+   "other_resources_confirmed": [],
+   "note": "Other resources may be genuine side effects of the stress (e.g. memory pressure causing swap I/O); the harness cannot tell side effects from false alarms."
+  },
+  "attribution": {
+   "correct": 12,
+   "wrong": 0,
+   "abstained": 1,
+   "reliability": 1.0,
+   "workload_pids_known": true
+  },
+  "expected": "CONFIRMED contention on Disk I/O during stress",
+  "stress_effective": {
+   "effective": true,
+   "evidence": "busiest disk reached 64% util, kernel I/O stall (PSI some) 4.736% (needs >= 50% or >= 1%)"
+  },
+  "verdict": "PARTIAL",
+  "recovery": {
+   "applicable": true,
+   "detector_clear_s": 3.1,
+   "metric": "disk_util",
+   "metric_back_near_baseline_s": null,
+   "recovered_within_window": true,
+   "observed_recovery_samples": 7
+  },
+  "cleanup": {
+   "leftover_workload_pids": [],
+   "ok": true
+  },
+  "verified": [
+   "Measured: metric means per phase, detection latency, recovery times, PIDs of the workload processes (read from the OS), whether any workload process survived cleanup."
+  ],
+  "inferred": [
+   "Inferred (not independently verified): the 'likely cause' text of each diagnosis and any statement about side-effect resources."
+  ]
+ }
+}

@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "created_at": "2026-11-18T22:17:39.281625",
+  "updated_at": "2026-11-18T22:17:39.606070",
+  "campaign_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation",
+  "repeats": 3,
+  "categories": [
+    "control",
+    "cpu-benign",
+    "cpu",
+    "memory",
+    "disk"
+  ],
+  "tasks": [
+    {
+      "id": "task_01_control_rep1",
+      "index": 1,
+      "category": "control",
+      "repeat": 1,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": null
+      },
+      "run_id": "dryrun-control-1",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-control-1",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.302810",
+      "completed_at": "2026-11-18T22:17:39.304173",
+      "error": null
+    },
+    {
+      "id": "task_02_cpu-benign_rep1",
+      "index": 2,
+      "category": "cpu-benign",
+      "repeat": 1,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 8
+      },
+      "run_id": "dryrun-cpu-benign-1",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-benign-1",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.325018",
+      "completed_at": "2026-11-18T22:17:39.326584",
+      "error": null
+    },
+    {
+      "id": "task_03_cpu_rep1",
+      "index": 3,
+      "category": "cpu",
+      "repeat": 1,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 12
+      },
+      "run_id": "dryrun-cpu-1",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-1",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.347733",
+      "completed_at": "2026-11-18T22:17:39.348273",
+      "error": null
+    },
+    {
+      "id": "task_04_memory_rep1",
+      "index": 4,
+      "category": "memory",
+      "repeat": 1,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "memory_pct": 10.0,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-memory-1",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-memory-1",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.368846",
+      "completed_at": "2026-11-18T22:17:39.370120",
+      "error": null
+    },
+    {
+      "id": "task_05_disk_rep1",
+      "index": 5,
+      "category": "disk",
+      "repeat": 1,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 2,
+        "disk_mb": 64,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-disk-1",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-disk-1",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.390750",
+      "completed_at": "2026-11-18T22:17:39.391266",
+      "error": null
+    },
+    {
+      "id": "task_06_control_rep2",
+      "index": 6,
+      "category": "control",
+      "repeat": 2,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": null
+      },
+      "run_id": "dryrun-control-2",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-control-2",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.411755",
+      "completed_at": "2026-11-18T22:17:39.412615",
+      "error": null
+    },
+    {
+      "id": "task_07_cpu-benign_rep2",
+      "index": 7,
+      "category": "cpu-benign",
+      "repeat": 2,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 8
+      },
+      "run_id": "dryrun-cpu-benign-2",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-benign-2",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.433453",
+      "completed_at": "2026-11-18T22:17:39.434266",
+      "error": null
+    },
+    {
+      "id": "task_08_cpu_rep2",
+      "index": 8,
+      "category": "cpu",
+      "repeat": 2,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 12
+      },
+      "run_id": "dryrun-cpu-2",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-2",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.455061",
+      "completed_at": "2026-11-18T22:17:39.455629",
+      "error": null
+    },
+    {
+      "id": "task_09_memory_rep2",
+      "index": 9,
+      "category": "memory",
+      "repeat": 2,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "memory_pct": 10.0,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-memory-2",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-memory-2",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.476193",
+      "completed_at": "2026-11-18T22:17:39.477211",
+      "error": null
+    },
+    {
+      "id": "task_10_disk_rep2",
+      "index": 10,
+      "category": "disk",
+      "repeat": 2,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 2,
+        "disk_mb": 64,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-disk-2",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-disk-2",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.497767",
+      "completed_at": "2026-11-18T22:17:39.498917",
+      "error": null
+    },
+    {
+      "id": "task_11_control_rep3",
+      "index": 11,
+      "category": "control",
+      "repeat": 3,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": null
+      },
+      "run_id": "dryrun-control-3",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-control-3",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.519392",
+      "completed_at": "2026-11-18T22:17:39.519941",
+      "error": null
+    },
+    {
+      "id": "task_12_cpu-benign_rep3",
+      "index": 12,
+      "category": "cpu-benign",
+      "repeat": 3,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 8
+      },
+      "run_id": "dryrun-cpu-benign-3",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-benign-3",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.540565",
+      "completed_at": "2026-11-18T22:17:39.541912",
+      "error": null
+    },
+    {
+      "id": "task_13_cpu_rep3",
+      "index": 13,
+      "category": "cpu",
+      "repeat": 3,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 12
+      },
+      "run_id": "dryrun-cpu-3",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-cpu-3",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.562567",
+      "completed_at": "2026-11-18T22:17:39.563391",
+      "error": null
+    },
+    {
+      "id": "task_14_memory_rep3",
+      "index": 14,
+      "category": "memory",
+      "repeat": 3,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "memory_pct": 10.0,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-memory-3",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-memory-3",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.583948",
+      "completed_at": "2026-11-18T22:17:39.584502",
+      "error": null
+    },
+    {
+      "id": "task_15_disk_rep3",
+      "index": 15,
+      "category": "disk",
+      "repeat": 3,
+      "status": "COMPLETED",
+      "parameters": {
+        "duration": 15.0,
+        "baseline": 10.0,
+        "recovery": 15.0,
+        "interval": 1.0,
+        "backend": "builtin",
+        "workers": 2,
+        "disk_mb": 64,
+        "disk_path": "/var/tmp"
+      },
+      "run_id": "dryrun-disk-3",
+      "run_dir": "/home/cse-sdpl/OS_Project/Linux-Bottleneck-Detection/data/dry_run_simulation/dryrun-disk-3",
+      "verdict": "PASS",
+      "started_at": "2026-11-18T22:17:39.605136",
+      "completed_at": "2026-11-18T22:17:39.606051",
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "completed": 15,
+    "failed": 0,
+    "cancelled": 0,
+    "pending": 0,
+    "skipped": 0
+  }
+}

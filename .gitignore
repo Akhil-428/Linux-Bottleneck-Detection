@@ -1,0 +1,41 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Test & coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.tox/
+
+# Temporary files & swap
+*.swp
+*.swo
+*~
+*.tmp
+
+# Runtime lock / automation state (never commit)
+campaign.lock
+.automation_state/
+
+# Operating system / IDE artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Note: The following project output directories are explicitly PRESERVED and tracked:
+# - data/ (includes original November 14 benchmark runs, logs, alerts, suite summaries)
+# - reports/ (includes comprehensive academic report, slides, viva guide, summary)
+# - dist/ (includes release distribution archives and SHA256 checksums)
+# - docs/ (includes model specification and viva reference)
